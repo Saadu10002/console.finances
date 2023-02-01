@@ -86,3 +86,15 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
+// i did console.log to see the value of the array.
+// The next is to declear the variables
+var months = finances.length;
+var i = 0
+var j = 0
+var total = 0
+var averageChange = 0
+var average;
+var net = 0
+netArray = []
+netChange = 0
+// Now to loop through the array
