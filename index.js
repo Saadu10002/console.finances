@@ -107,13 +107,20 @@ for(var i = 0; i < finances.length; i++) {
 if(typeof finances[i][j2]===`number`) {
     total = total + finances[i][j2]
 
+// To calculate change
+change = finances[i][j2] -net;
+net = finances[i][j2]
+netArray.push(change);
 console.log(total);
+console.log(change);
+console.log(net);
+console.log(netArray);
 
 }
 
-
-
-
     }
-
 }   
+
+// To find the average change, maximum profit & minimum losses
+
+if()
