@@ -98,3 +98,10 @@ var net = 0
 netArray = []
 netChange = 0
 // Now to loop through the array
+for(var i = 0; i < finances.length; i++){
+
+    for(var j2 = 0; j2 < finances[1].length; j2++){
+
+        console.log(j2)
+    }
+}   
