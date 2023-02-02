@@ -96,7 +96,7 @@ var averageChange = 0
 var average;
 var net = 0
 netArray = []
-netChange = 0
+netChangeSum = 0
 // Now to loop through the array
 for(var i = 0; i < finances.length; i++) {
 
@@ -111,10 +111,11 @@ if(typeof finances[i][j2]===`number`) {
 change = finances[i][j2] -net;
 net = finances[i][j2]
 netArray.push(change);
-console.log(total);
-console.log(change);
-console.log(net);
-console.log(netArray);
+
+// console.log(total);
+// console.log(change);
+// console.log(net);
+// console.log(netArray);
 
 }
 
@@ -123,4 +124,42 @@ console.log(netArray);
 
 // To find the average change, maximum profit & minimum losses
 
-if()
+for(var i = 0; i < netArray.length; i++) {
+    netChangeSum = netChangeSum + netArray[i];
+}
+// console.log(netChangeSum);
+
+avg = Math.floor(netChangeSum/finances.length);
+
+// console.log(avg)
+
+var minimum = finances[0]
+var maximum = 0;
+len = finances.length
+var length = finances.length;
+for(var i = 0; i < len - 1; i++)
+if(change < maximum[1]){
+    maximum = finances[i][0], finances[i][1]
+}
+
+if(change > minimum[1]){
+    minimum = financed[i][0], finances[i][1]
+}
+
+// minimum;
+// maximum;
+// console.log(minimum);
+// console.log(maximum);
+// Now to do the analysis that print out the work 
+analysis = `
+finances Analysis
+,,,,,,,,,,,,,,,,,,,,,,,,
+
+Total Months: ${months}
+Total: $ ${total}
+Avg: ${avg}
+Maximum: ${maximum[0]} ${maximum[1]}
+Minimum: ${minimum[0]} ${minimum[1]}`
+
+
+console.log(analysis);
