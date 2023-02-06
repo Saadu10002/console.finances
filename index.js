@@ -112,10 +112,7 @@ change = finances[i][j2] -net;
 net = finances[i][j2]
 netArray.push(change);
 
-// console.log(total);
-// console.log(change);
-// console.log(net);
-// console.log(netArray);
+
 
 }
 
@@ -146,10 +143,7 @@ if(change > minimum[1]){
     minimum = financed[i][0], finances[i][1]
 }
 
-// minimum;
-// maximum;
-// console.log(minimum);
-// console.log(maximum);
+
 // Now to do the analysis that print out the work 
 analysis = `
 finances Analysis
