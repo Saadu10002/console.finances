@@ -155,9 +155,9 @@ analysis = `
 finances Analysis
 ,,,,,,,,,,,,,,,,,,,,,,,,
 
-Total Months: ${months}
+Total Months: ${months};
 Total: $ ${total}
-Avg: ${avg}
+Avg: ${avg})
 Maximum: ${maximum[0]} ${maximum[1]}
 Minimum: ${minimum[0]} ${minimum[1]}`
 
